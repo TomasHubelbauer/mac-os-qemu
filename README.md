@@ -14,10 +14,11 @@ It also has Debian thingies but meh.
 In theory all of the above should be portable to Windows?
 
 This is the real meat: https://github.com/foxlet/macOS-Simple-KVM
-It downloads macOS from Apple servers (a portable / directly runnable Python script),
-then uses `dmgtoimg` (which is in the repository as a binary not source - ???)
-and then wraps a few Qemu switches in a Bash script which should also be portable
-assuming Qemu switches are stable across Linux and Windows.
+
+I started porting it in https://github.com/TomasHubelbauer/sus-downloader
+Now I am able to download macOS packages from SUS but it remains to be seen if DMG2IMG will work on Windows
+or will be runnable in WSL or something like that and if the Qemu switchers in that repository will work on
+Windows.
 
 ## Dean Ends
 
